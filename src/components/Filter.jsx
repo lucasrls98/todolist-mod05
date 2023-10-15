@@ -6,7 +6,7 @@ const Filter = ({filter, setFilter}) => {
                 <div>
                     <p>Status: </p>
                     <select value={filter} onChange={(e)=> setFilter(e.target.value)}>
-                        <option value="ALL">Todas</option>
+                        <option value="All">Todas</option>
                         <option value="Completed">Completas</option>
                         <option value="Incomplete">Incompletas</option>
                     </select>
