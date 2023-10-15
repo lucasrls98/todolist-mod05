@@ -23,7 +23,7 @@ O aplicativo oferece as seguintes funcionalidades:
 
 Siga estas etapas para executar o aplicativo em sua máquina:
 
-1. Certifique-se de que você tenha o Node.js instalado em sua máquina. [Veja como baixar o Node.js](#como-baixar-o-nodejs).
+1. Certifique-se de que você tenha o Node.js instalado em sua máquina. 
 
 2. Clone este repositório para o seu ambiente de desenvolvimento.
 
