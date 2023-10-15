@@ -1,8 +1,10 @@
+@import url('https://fonts.googleapis.com/css2?family=Lato:ital,wght@0,400;0,700;0,900;1,400&family=Montserrat:wght@400;700&family=Roboto:wght@300;400;500;700&family=Young+Serif&display=swap');
+
 body{
-  font-family: Arial;
-  background-color: #f4f4f4;
+  font-family: 'Young Serif', serif;
+  background-color: #ece8e8;
   padding: 30px;
-  color: #333;
+  color: #1f1e20;
   background-image: url("./img/background.jpg");
   background-position: center;
   background-size: cover;
@@ -12,17 +14,23 @@ body{
 .app{
   max-width: 600px;
   margin:0 auto 600px;
-  background-color: #efefef;
+  background-color: #1f1e20;
   padding: 20px 30px;
   border-radius: 10px;
 }
 
 h1{
   text-align: center;
+  color: #ece8e8;
+  font-family: 'Montserrat', sans-serif;
+
 }
 
 h2{
   margin-bottom: 10px;
+  color: #ece8e8;
+  font-family: 'Montserrat', sans-serif;
+
 }
 
 p{
@@ -34,19 +42,21 @@ input{
 }
 
 button{
-  background-color: #333974;
-  color: #fff;
+  background-color: #6ed8d8;
+  color: #1f1e20;
   padding: 5px 10px;
   border: none;
   border-radius: 3px;
-  cursor: pointer;
-  opacity: .85;
+  cursor: pointer;  
   transition: .3s;
   margin-right: 10px;
+  font-family: 'Roboto', sans-serif;
+  font-size: 1rem;
 }
 
-button:hover{
-  opacity: 1;
+button:hover{    
+  transform: scale(1.05);
+  font-weight: 700;
 }
 
 .todo-list{
@@ -68,7 +78,8 @@ button:hover{
 }
 
 .complete{
-  background-color: #5cb85c;  
+  background-color: #5cb85c;
+    
 }
 
 .remove{
@@ -83,10 +94,21 @@ input, select{
   padding: 5px;
   margin-bottom: 10px;
   border: 1px solid #DDD;
-  border-radius: 3px;
+  border-radius: 8px;
   width: 100%;
 
 }
+
+select{
+  cursor: pointer;
+
+}
+
+.filter-title{
+  color: #ece8e8;
+}
+
+
 
 .filter,
 .search{

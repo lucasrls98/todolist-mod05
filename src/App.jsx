@@ -8,34 +8,37 @@ import Filter from './components/Filter';
 
 
 function App() {
+  //Objeto das todos
   const [todos, setTodos] = useState([
     {
       id: 1,
-      text: "Criar funcionalidade X no sistema",
+      text: "Criar Header e Footer",
       category: "Trabalho",
       isCompleted: false,
     },
     {
       id: 2,
-      text: "Ir para a academia",
+      text: "Liberar o Almoço",
       category: "Pessoal",
       isCompleted: false,
     },
     {
       id: 3,
-      text: "Estudar React",
+      text: "Estudar React e Node",
       category: "Estudos",
       isCompleted: false,
     },
 
   ]);
 
+  //useState da pesquisa, filtro e ordenação
   const [search, setSearch] = useState("");
 
   const [filter, setFilter] = useState("All");
 
   const [sort, setSort] = useState("Asc")
 
+  //
   const addTodo = (text, category) => {
 
     const newTodos = [...todos, {
@@ -67,7 +70,8 @@ function App() {
 
   return (
     <div className="app">
-      <h1>Lista de Tarefas</h1>
+      <h1>📝 Lista de Tarefas - Rolando</h1>
+      
       <Search search={search} setSearch={setSearch} />
       <Filter filter={filter} setFilter={setFilter} setSort={setSort} />
       <div className="todo-list">
