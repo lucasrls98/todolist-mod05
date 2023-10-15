@@ -1,5 +1,6 @@
 import React from 'react'
 
+//componente de remover e completar tarefa
 
 const Todo = ({todo, removeTodo, completeTodo}) => {
     return (

@@ -1,3 +1,4 @@
+//componente da pesquisa
 const Search = ( {search, setSearch} ) => {
     return (
         <div className="search">

@@ -1,3 +1,4 @@
+//Componente do filtro e ordenação
 const Filter = ({filter, setFilter, setSort}) => {
     return (
         <div className="filter">

@@ -38,7 +38,7 @@ function App() {
 
   const [sort, setSort] = useState("Asc")
 
-  //
+  //função para adicionar tarefa
   const addTodo = (text, category) => {
 
     const newTodos = [...todos, {
@@ -52,6 +52,7 @@ function App() {
 
   };
 
+  //função para remover tarefa
   const removeTodo = (id) => {
     const newTodos = [...todos]
     const filteredTodos = newTodos.filter((todo) =>
@@ -60,6 +61,7 @@ function App() {
     setTodos(filteredTodos);
   };
 
+  //função para completar tarefa
   const completeTodo = (id) => {
     const newTodos = [...todos]
     newTodos.map((todo) =>
@@ -67,14 +69,15 @@ function App() {
     setTodos(newTodos);
   }
 
-
+//retorno da aplicação
   return (
     <div className="app">
       <h1>📝 Lista de Tarefas - Rolando</h1>
       
       <Search search={search} setSearch={setSearch} />
       <Filter filter={filter} setFilter={setFilter} setSort={setSort} />
-      <div className="todo-list">
+      {/* inserindo a lógica para pesquisa, filtro e ordenação  */}
+      <div className="todo-list">        
         {todos
           .filter((todo) =>
           filter === "All"
